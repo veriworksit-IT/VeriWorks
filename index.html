@@ -1,39 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>VeriWorks IT — Data Entry & Virtual Assistance Agency</title>
-
-<!-- SEO -->
-<meta name="description" content="VeriWorks IT provides professional Data Entry, Lead Generation, Excel Services, Virtual Assistance and CRM Management solutions.">
-<meta name="keywords" content="data entry, virtual assistant, excel, lead generation, data mining, bpo services, crm management">
-<meta name="author" content="VeriWorks IT">
-
-<!-- Social Share -->
-<meta property="og:title" content="VeriWorks IT — Professional Data Entry Agency">
-<meta property="og:description" content="Reliable data entry and business support services for global clients.">
-<meta property="og:type" content="website">
-
-<link rel="stylesheet" href="style.css">
-
-<!-- Fonts + Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
-
-<!-- PRELOADER -->
-<div id="preloader">
-  <div class="loader"></div>
-</div>
-
-<!-- Navbar -->
+<div id="preloader"><div class="loader"></div></div>
 <nav>
-  <div class="logo">VeriWorks IT</div>
-  <div class="toggle-theme"><i class="fas fa-moon"></i></div>
+  <div class="nav-left">
+    <img src="img/file_0000000011547207b7c862aa6a79b118(2).png" class="logo-img" />
+    <div class="brand">VeriWorks IT</div>
+  </div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#services">Services</a></li>
@@ -41,94 +23,86 @@
     <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <div class="toggle-theme" id="toggleTheme"><i class="fas fa-moon"></i></div>
 </nav>
-
-<!-- Hero -->
+<div class="mobile-menu hidden" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</div>
 <section class="hero" id="home">
-  <h1>Your Trusted Partner for Data Entry & Virtual Support</h1>
-  <p>We deliver accuracy, efficiency, confidentiality and professional data handling services for individuals and businesses worldwide.</p>
-  <a href="#contact" class="btn-primary">Contact Us</a>
+  <div class="hero-inner">
+    <h1>Your Trusted Partner for Data Entry & Virtual Support</h1>
+    <p>We deliver accuracy, efficiency, confidentiality and professional data handling services.</p>
+    <a href="#contact" class="btn-primary">Contact Us</a>
+  </div>
 </section>
-
-<!-- Services -->
 <section class="section" id="services">
   <h2>Our Services</h2>
   <div class="services-box">
-
     <div class="service"><i class="fas fa-keyboard"></i><h3>Data Entry</h3><p>Fast and accurate data input services.</p></div>
-
     <div class="service"><i class="fas fa-database"></i><h3>Data Mining</h3><p>Extract valuable structured information.</p></div>
-
-    <div class="service"><i class="fas fa-table"></i><h3>Excel Services</h3><p>Formatting, cleanup, formulas & automation.</p></div>
-
-    <div class="service"><i class="fas fa-bullhorn"></i><h3>Lead Generation</h3><p>Generate quality leads for business growth.</p></div>
-
-    <div class="service"><i class="fas fa-headset"></i><h3>Virtual Assistance</h3><p>Admin & task support for businesses.</p></div>
-
-    <div class="service"><i class="fas fa-users"></i><h3>CRM Management</h3><p>Manage your customer relations efficiently.</p></div>
-
+    <div class="service"><i class="fas fa-table"></i><h3>Excel Services</h3><p>Formatting, cleanup, automation.</p></div>
+    <div class="service"><i class="fas fa-bullhorn"></i><h3>Lead Generation</h3><p>Generate quality leads.</p></div>
+    <div class="service"><i class="fas fa-headset"></i><h3>Virtual Assistance</h3><p>Admin & business support.</p></div>
+    <div class="service"><i class="fas fa-users"></i><h3>CRM Management</h3><p>Manage customer relations.</p></div>
   </div>
 </section>
-
-<!-- Portfolio -->
 <section class="section" id="portfolio">
   <h2>Sample Works</h2>
   <div class="portfolio-grid">
-    <div class="port-item">Excel Cleanup & Formatting</div>
-    <div class="port-item">PDF to Word Conversion</div>
-    <div class="port-item">Data Collection & Mining</div>
-    <div class="port-item">Spreadsheet Automation</div>
-    <div class="port-item">Copy Typing Projects</div>
-    <div class="port-item">CRM Data Entry</div>
-    <div class="port-item">Email List Creation</div>
-    <div class="port-item">Online Research & Reporting</div>
+    <div class="port-item" data-project="excel-cleanup" onclick="openProject(this)">Excel Cleanup & Formatting</div>
+    <div class="port-item" data-project="data-collection" onclick="openProject(this)">Data Collection & Mining</div>
+    <div class="port-item" data-project="spreadsheet-automation" onclick="openProject(this)">Spreadsheet Automation</div>
+    <div class="port-item" data-project="crm-data-entry" onclick="openProject(this)">CRM Data Entry</div>
+    <div class="port-item" data-project="email-list" onclick="openProject(this)">Email List Creation</div>
+    <div class="port-item" data-project="online-research" onclick="openProject(this)">Online Research & Reporting</div>
   </div>
 </section>
-
-<!-- Testimonials -->
 <section class="section" id="testimonials">
   <h2>Client Feedback</h2>
-  <div class="testimonial-slider">
-
-    <div class="testimonial active">
-      <p>"Very accurate and fast delivery. Highly recommended."</p>
-      <h4>— Sarah, USA</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>"Professional data support for our business operations."</p>
-      <h4>— Michael, UK</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>"Reliable virtual assistance and excellent communication."</p>
-      <h4>— Ayesha, UAE</h4>
-    </div>
-
+  <div class="testimonial-slider" id="testimonialSlider">
+    <div class="testimonial active"><p>"Very accurate and fast delivery."</p><h4>— Sarah, USA</h4></div>
+    <div class="testimonial"><p>"Professional data support."</p><h4>— Michael, UK</h4></div>
+    <div class="testimonial"><p>"Excellent communication."</p><h4>— Ayesha, UAE</h4></div>
   </div>
 </section>
-
-<!-- Contact -->
 <section class="section" id="contact">
   <h2>Contact Us</h2>
   <div class="contact-links">
     <a href="https://www.facebook.com/share/19VWng1R4D/" target="_blank"><i class="fab fa-facebook"></i>Facebook Page</a>
     <a href="mailto:veriworksit@gmail.com"><i class="fa fa-envelope"></i>Email: veriworksit@gmail.com</a>
-    <a href="https://wa.me/8801630814644" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp: +8801630814644</a>
-    <a href="#"><i class="fab fa-linkedin"></i>LinkedIn (Coming Soon)</a>
+    <a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
   </div>
 </section>
-
-<!-- Footer -->
-<footer>
-  © 2025 VeriWorks IT — All Rights Reserved
-</footer>
-
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/8801630814644" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-
+<footer>© 2025 VeriWorks IT — All Rights Reserved</footer>
+<a href="YOUR_LINKEDIN_URL" class="linkedin-float" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <div class="close" id="modalClose">✕</div>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
+```
+
+---
+
+## **style.css**
+
+```css
+/* Paste full CSS here (already generated in previous version) */
+```
+
+---
+
+## **script.js**
+
+```javascript
+/* Paste full JavaScript here (from previous version) */
+```
